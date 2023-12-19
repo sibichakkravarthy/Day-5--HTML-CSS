@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Update Page</title>
+    <style>
+        .update{
+            border: 2px solid black;
+            padding: 20px;
+            justify-content: center;
+        }
+        .para{
+            padding: 10px;
+            font-size: 25px;
+        }
+      .form-container {
+          display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 18px;
+
+       }
+
+       form {
+        width: 50%;
+       }
+h1{
+    background-color: brown;
+    color: aqua;
+    font-size: 40px;
+}
+@media(min-width: 200px)and (max-width:750px){
+    .form-container{
+        width: 50%;
+    }
+}
+body{
+    border: 2px solid black;
+    width: auto;
+    padding: 50px;
+}
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Event-1</h1>
+    <p class="para"><b>Number of available seats: 23</b></p>
+    <div class="form-container">
+    <form onsubmit="" method="get" class="update">
+            
+        <div>
+            <label for="name">Name :</label>
+            <input
+            type="text"
+            placeholder="type your name"
+            name="name"
+        />
+        </div>
+        <img align="left" src="dark 1.jpeg"
+            width="100px"
+            height="100px" >
+       <div>
+        <label for="email">E-mail :</label>
+        <input
+        type="text"
+        placeholder="type your email"
+        name="email"
+        />
+       </div>
+       <div>
+        <label for="phone no">Phone No:</label>
+        <input
+        type="text"
+        placeholder="type phone number"
+        />
+       </div>
+       <div>
+        <label for="seats">Number of Seats:</label>
+        <input
+        type="number"
+        placeholder="total seats"
+        />
+       </div>
+       <div>
+        <label for="attendee">Name of Attendee 2:</label>
+        <input
+        type="text"
+        placeholder="attendee 2"
+        />
+       </div>
+       <br>
+       <button>Submit</button>
+       <button>Cancel</button>
+    </form>
+
+    </div>
+     </center>
+    </body>
+
+</html>
